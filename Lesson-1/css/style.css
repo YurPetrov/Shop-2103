@@ -172,6 +172,13 @@ body {
     width: 100%;
 }
 
+.overlay {
+    /*width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;*/
+}
+
 .products {
     margin-top: 96px;
 }
@@ -226,6 +233,69 @@ body {
     text-align: left;
     text-transform: uppercase;
     margin: 24px 18px 0 18px;
+}
+
+.products__item-title:hover,
+.products__item-title:focus {
+    color: #FFE08C;
+}
+
+.products__item-title:active {
+    color: #FF8901;
+}
+
+.products__item-hover {
+    /*position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 420px;
+    background: rgba(58, 56, 56, 0.86);*/
+}
+
+.products__hover {
+    /*position: absolute;
+    display: none;*/
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 420px;
+    background: rgba(58, 56, 56, 0.86);
+    z-index: 1;
+}
+
+.products__hover-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 138px;
+    height: 43px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.products__hover-img {
+    width: 26px;
+}
+
+.products__hover-text {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 17px;
+    /*color: #FFFFFF;*/
+}
+
+.products-hover__button:hover,
+.products-hover__button:focus {
+    background-color: rgba(33, 33, 0, 0.5);
+}
+
+.products-hover__button:active {
+    background-color: rgba(77, 77, 0, 0.7);
 }
 
 .products__item-text {
