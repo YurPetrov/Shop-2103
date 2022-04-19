@@ -172,13 +172,6 @@ body {
     width: 100%;
 }
 
-.overlay {
-    /*width: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;*/
-}
-
 .products {
     margin-top: 96px;
 }
@@ -244,25 +237,14 @@ body {
     color: #FF8901;
 }
 
-.products__item-hover {
-    /*position: absolute;
+.products__hover {
+    position: absolute;
     display: none;
     top: 0;
     left: 0;
     width: 360px;
     height: 420px;
-    background: rgba(58, 56, 56, 0.86);*/
-}
-
-.products__hover {
-    /*position: absolute;
-    display: none;*/
-    top: 0;
-    left: 0;
-    width: 360px;
-    height: 420px;
     background: rgba(58, 56, 56, 0.86);
-    z-index: 1;
 }
 
 .products__hover-button {
@@ -286,16 +268,22 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 17px;
-    /*color: #FFFFFF;*/
+    color: #FFFFFF;
 }
 
-.products-hover__button:hover,
-.products-hover__button:focus {
+.products__hover-button:hover,
+.products__hover-button:focus {
     background-color: rgba(33, 33, 0, 0.5);
 }
 
-.products-hover__button:active {
+.products__hover-button:active {
     background-color: rgba(77, 77, 0, 0.7);
+}
+
+.products__item:hover>.products__hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .products__item-text {
@@ -316,6 +304,37 @@ body {
     text-align: left;
     color: #F26376;
     margin: 18px;
+}
+
+.products__button-wpr {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.products__button {
+    height: 47px;
+    width: 211px;
+    border: 1px solid #FF6A6A;
+    background: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #F26376;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.products__button:active {
+    opacity: 0.5;
+}
+
+.products__button:hover,
+.products__button:focus {
+    background: #FF6A6A;
+    color: #FFFFFF;
 }
 
 .advantages {
