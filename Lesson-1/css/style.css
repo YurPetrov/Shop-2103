@@ -425,6 +425,10 @@ body {
     margin-top: 30px;
 }
 
+.basement__wrapper-text--italic {
+    font-style: italic;
+}
+
 .basement__wrapper-title {
     font-size: 24px;
     line-height: 38px;
@@ -443,6 +447,60 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #222224;
+}
+
+.basement__wrapper-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.basement__wrapper-form-email {
+    width: 256px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    background-color: #E1E1E1;
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
+    color: #222224;
+}
+
+.basement__wrapper-form-email:focus {
+    outline: 1px solid red;
+}
+
+.basement__wrapper-form-email:hover {
+    outline: 1px solid #ffe08c;
+}
+
+.basement__wrapper-form-button {
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    background-color: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.basement__wrapper-form-button:hover,
+.basement__wrapper-form-button:focus {
+    background: #FF6A6A;
+    color: #FFFFFF;
+}
+
+.basement__wrapper-form-button:active {
+    opacity: 0.5;
 }
 
 .down-footer {
@@ -473,4 +531,8 @@ body {
 .down-footer__item {
     margin-left: 7px;
     cursor: pointer;
+}
+
+.down-footer__icon-bkg {
+    fill: #FFFFFF;
 }
